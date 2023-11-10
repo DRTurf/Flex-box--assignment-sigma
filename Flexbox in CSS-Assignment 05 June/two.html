@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in css-assignment Q2</title>
+    <style>
+        body{
+            background-color: #cad5e2;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .wrapper h1{
+            text-align: center;
+            color: #5a4bda;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .web-des{
+            text-align: center;
+            font-size: 12px;
+            margin-top: 0px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 100px;
+            gap: 20px;
+        }
+        .card{
+            background-color: white;
+            width:330px;
+            height: 346.75px;
+            border-radius: 10px;
+            /* margin: 10px; */
+        }
+        .card img{
+            width: 300px;
+            height: 168.75px;
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+        }
+        .card-des{
+            color: #5a4bda;
+           margin-left: 15px;
+           font-size: 18px;
+        }
+        .card p{
+            margin-left: 15px;
+            font-size: 13px;
+        }
+        .free{
+            margin-left: 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Community Programs</h1>
+        <p class="web-des">Open to all pro-live classes on Youtube for free</p>
+        <div class="container">
+            <div class="card">
+                <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6448ca86508654220671ad2d.jpg" alt="">
+                <h3 class="card-des">Masterclass Understanding APIs in Web Development with roadmap</h3>
+                <p>Hitesh Choudhary</p>
+                <h3 class="free">FREE</h3>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6463025b6977cc64d3ddf8b7.jpg" alt="">
+                <h3 class="card-des">Masterclass Cracking The Coding Interveiw LinkedList</h3>
+                <p>Vishwa Mohan</p>
+                <h3 class="free">FREE</h3>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64426c32508654fb0f7168bd.jpg" alt="">
+                <h3 class="card-des">MasterClass Important of DSA in Mordern PRogramming</h3>
+                <p>Priya Bhatia</p>
+                <h3 class="free">FREE</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

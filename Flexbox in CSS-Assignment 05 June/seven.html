@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in css-assignment Q7</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .wrapper{
+            background-color: #ef4444;
+            padding: 0 0 0 5px;
+            border-radius: 12px;
+            position: fixed;
+            width: 98%;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fee2e2 ;
+            color: #f36744;
+            padding: 0 20px;
+            border-radius: 8px;
+        }
+        .material-symbols-outlined{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <span class="material-symbols-outlined">
+                warning
+                </span>
+            <p>Warning!This Action is Not Allowed.</p>
+            <span class="material-symbols-outlined">
+                close
+                </span>
+        </div>
+    </div>
+</body>
+</html>

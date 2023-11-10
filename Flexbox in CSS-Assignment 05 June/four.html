@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in css-assignment Q4</title>
+    <style>
+        body{
+            margin:0 25%;
+        }
+        nav{
+            border-bottom: 2px solid #c6c6c6;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo{
+            /* background-color: blue; */
+            max-width:100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font: size 18px;
+        }
+        .links{
+            /* background-color: red; */
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;      
+        }
+        a{
+            text-decoration: none;
+            color: #1a89ee;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .gmail-logo{
+            width:30px;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 15px;
+            color: #1a89ee;
+            border: 1px solid #afafaf;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .blue{
+            background-color:#1a73e8 ;
+            color: white;
+            border:1px solid #1c549e;
+        }
+        .mid-para{
+            display: flex;
+            justify-content: space-between;
+            gap:50px;
+        }
+        .text{
+            width: 30%;
+            /* background-color: teal; */
+        }
+        .header{
+            font-size: 50px;
+            font-weight: 500;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .para{
+            font-size: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .sec-links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .photo{
+            width: 70%;
+        }
+        .photo img{
+            width: 99%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97" alt="" class="gmail-logo">
+                <p>Gmail</p>
+            </div>
+            <div class="links">
+                <a href="">For Work</a>
+                <button>Sign In</button>
+                <button class="blue">Create an account</button>
+            </div>
+        </div>
+    </nav>
+    <section class="mid-para">
+            <div class="text">
+                <p class="header">Secure, smart, and easy to use email</p>
+                <p class="para">Get more done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one place.</p>
+                <div class="sec-links">
+                    <button class="blue">Create an account</button>
+                    <a href="">For Work</a>
+                </div>
+                
+            </div>
+            <div class="photo">
+                <img src="https://lh3.googleusercontent.com/PWXM4hp9lRRezHTV86SqLwhRQMz4_Lk08jll3GkWBvBZy_Uk6kvUvwIrVilwaIW2mHZJoccchG6o9a5UdOJEwQPf9oJGmOGSglo3VW0=rw-e365-w2880" alt="">
+            </div>
+        
+    </section>
+    
+</body>
+</html>

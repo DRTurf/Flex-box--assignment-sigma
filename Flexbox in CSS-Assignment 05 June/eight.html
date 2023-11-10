@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in css-assignment Q8</title>
+    <style>
+        body{
+            background-color:#242b2e;
+        }
+        .wrapper{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container img{
+            width: 200px;
+            border-radius: 50%; 
+            border: 10px solid white;
+            position: relative;
+            margin-left: -50px;
+        }
+        .one{
+            z-index: 4;
+        }
+        .two{
+            z-index: 3;
+        }
+        .three{
+            z-index: 2;
+        }
+        .four{
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img class="one"src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg" alt="">
+            <img class="two"src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_170,w_170,f_auto,g_faces,z_0.7,b_white,q_auto:eco,dpr_1/smokhfs2uevnppc2bmwl" alt="">
+            <img class="three"src="https://leerob.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.b1d1472f.jpg&w=256&q=75" alt="">
+            <img class="four"src="https://nextjs.org/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F35255%2F1665059775-delba.jpg&w=640&q=75" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
